@@ -13,5 +13,5 @@ git add .
 git commit -am Extension-${NewVersionNumber}
 git tag Extension-${NewVersionNumber}
 git push origin master --tags
-pod repo push privatepods __ProjectName___Extension.podspec --verbose --allow-warnings --use-libraries --use-modular-headers
+pod repo push DUSpecs __ProjectName___Extension.podspec --verbose --allow-warnings --use-libraries --use-modular-headers
 
