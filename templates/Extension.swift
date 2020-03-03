@@ -16,7 +16,7 @@ public extension CTMediator {
             "callback":callback,
             kCTMediatorParamsKeySwiftTargetModuleName:ModuleName
         ]
-        if let viewController = self.performTarget("__ProjectName__Demo", action: "demo", params: params, shouldCacheTarget: false) as? UIViewController {
+        if let viewController = self.performTarget("__ProjectName__", action: "demo", params: params, shouldCacheTarget: false) as? UIViewController {
             return viewController
         }
         return nil
