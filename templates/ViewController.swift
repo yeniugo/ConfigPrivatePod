@@ -7,33 +7,55 @@
 
 import UIKit
 import CTMediator
+import SwiftHandyFrame
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        view.addSubview(button)
+        view.addSubview(tableView)
     }
-    
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        button.sizeToFit()
-        button.center = view.center
+        tableView.hf.fill()
     }
-    
-    @objc func didTappedButton() {
-        guard let viewController = CTMediator.sharedInstance()?.__ProjectName___demo(name: "world", callback: { (resultString) in
-            print(resultString)
-        }) else { return }
-        print(viewController)
+
+    // MARK: UITableViewDelegate
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.textLabel?.text = dataSource[indexPath.row]
     }
-    
-    private lazy var button:UIButton = {
-        let _button = UIButton(type: .system)
-        _button.setTitle("show demo view controller", for: .normal)
-        _button.addTarget(self, action: #selector(didTappedButton), for: .touchUpInside)
-        return _button
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if indexPath.row == 0 {
+            let result = CTMediator.sharedInstance().__ProjectName___demo()
+            print(result)
+        }
+    }
+
+    // MARK: UITableViewDataSource
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataSource.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+    }
+
+    // MARK: Getters and Setters
+    private lazy var tableView:UITableView = {
+        let _tableView = UITableView.init(frame: .zero, style: .plain)
+        _tableView.delegate = self
+        _tableView.dataSource = self
+        _tableView.tableFooterView = UIView()
+        _tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        return _tableView
+    }()
+
+    private lazy var dataSource:[String] = {
+        return [
+            "test"
+        ]
     }()
 }
-

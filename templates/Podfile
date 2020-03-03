@@ -9,5 +9,8 @@ use_frameworks!
 target '__ProjectName__' do
 
   pod "CTMediator"
+
+  # private pods
+  pod "SwiftHandyFrame"
  
 end
