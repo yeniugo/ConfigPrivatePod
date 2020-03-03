@@ -10,7 +10,7 @@ import CTMediator
 fileprivate let ModuleName = "__ProjectName__"
 
 public extension CTMediator {
-    @objc func __ProjectName___demo(name:String, callback:@escaping (String)->Void) -> UIViewController? {
+    func __ProjectName___demo(name:String, callback:@escaping (String)->Void) -> UIViewController? {
         let params:[AnyHashable:Any] = [
             "name":name,
             "callback":callback,
