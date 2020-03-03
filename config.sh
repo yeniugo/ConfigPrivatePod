@@ -73,7 +73,7 @@ uploadFilePath="../${projectName}/upload.sh"
 uploadExtensionFilePath="../${projectName}/upload_extension.sh"
 podfilePath="../${projectName}/Podfile"
 demovcPath="../${projectName}/${projectName}/${projectName}/DemoViewController.swift"
-targetPath="../${projectName}/${projectName}/${projectName}/Target/Target_${projectName}Demo.swift"
+targetPath="../${projectName}/${projectName}/${projectName}/Target/Target_${projectName}.swift"
 extensionPath="../${projectName}/${projectName}/${projectName}_Extension/${projectName}_Extension.swift"
 vcPath="../${projectName}/${projectName}/ViewController.swift"
 
