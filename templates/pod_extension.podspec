@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "__ProjectName___Extension"
   s.version      = "1"
-  s.swift_version = '5.1'
+  s.swift_version = '5.2'
   s.summary      = "__ProjectName___Extension."
 
   # This description is used to generate tags and improve search results.
