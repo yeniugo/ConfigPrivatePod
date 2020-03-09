@@ -80,8 +80,8 @@ podfilePath="../${projectName}/Podfile"
 targetHeaderPath="../${projectName}/${projectName}/${projectName}/Target/Target_${projectName}.h"
 targetPath="../${projectName}/${projectName}/${projectName}/Target/Target_${projectName}.m"
 
-extensionHeaderPath="../${projectName}/${projectName}/${projectName}_Extension/${projectName}_Extension.h"
-extensionPath="../${projectName}/${projectName}/${projectName}_Extension/${projectName}_Extension.m"
+extensionHeaderPath="../${projectName}/${projectName}/${projectName}_Category/CTMediator+${projectName}.h"
+extensionPath="../${projectName}/${projectName}/${projectName}_Category/CTMediator+${projectName}.m"
 
 vcHeaderPath="../${projectName}/${projectName}/ViewController.h"
 vcPath="../${projectName}/${projectName}/ViewController.m"

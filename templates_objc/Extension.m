@@ -12,7 +12,7 @@
 
 - (NSString *)__ProjectName___test
 {
-    NSString *result = [self performTarget:@"__ProjectName__" action:@"test" params:nil shouldCacheTarget:NO];
+    NSString *result = (NSString *)[self performTarget:@"__ProjectName__" action:@"test" params:nil shouldCacheTarget:NO];
     return result;
 }
 
