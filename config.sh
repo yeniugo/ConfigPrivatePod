@@ -57,6 +57,8 @@ getInfomation() {
 
 echo -e "\n"
 git pull origin master --tags
+echo -e "\n"
+echo -e "\n"
 
 while [ "$confirmed" != "y" -a "$confirmed" != "Y" ]
 do
