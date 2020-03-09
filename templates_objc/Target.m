@@ -10,9 +10,8 @@
 
 @implementation Target___ProjectName__
 
-- (NSString *)Action_fetchId:(NSDictionary *)params
+- (NSString *)Action_test:(NSDictionary *)params
 {
-    NSLog(@"%@", params);
     return @"success";
 }
 
