@@ -29,8 +29,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         if indexPath.row == 0 {
-            let result = CTMediator.sharedInstance().__ProjectName___demo()
-            print(result)
+            let result = CTMediator.sharedInstance().DuLoginModule_demo(name: "casa") { (responseString) in
+                debugPrint(responseString)
+            }
+            print(result as Any)
         }
     }
 
