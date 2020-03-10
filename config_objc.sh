@@ -87,7 +87,7 @@ vcHeaderPath="../${projectName}/${projectName}/ViewController.h"
 vcPath="../${projectName}/${projectName}/ViewController.m"
 
 mkdir -p "../${projectName}/${projectName}/${projectName}/Target"
-mkdir -p "../${projectName}/${projectName}/${projectName}_Extension"
+mkdir -p "../${projectName}/${projectName}/${projectName}_Category"
 
 echo "copy to $licenseFilePath"
 cp -f ./templates_objc/FILE_LICENSE "$licenseFilePath"
