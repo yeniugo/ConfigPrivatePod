@@ -1,5 +1,9 @@
 #!/bin/bash
 
+git stash
+git pull origin master --tags
+git stash pop
+
 VersionString=`grep -E 's.version.*=' __ProjectName__.podspec`
 VersionNumber=`tr -cd 0-9 <<<"$VersionString"`
 
