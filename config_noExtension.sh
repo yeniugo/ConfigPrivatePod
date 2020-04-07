@@ -82,6 +82,7 @@ podfilePath="../${projectName}/Podfile"
 # vcPath="../${projectName}/${projectName}/ViewController.swift"
 
 # mkdir -p "../${projectName}/${projectName}/${projectName}/Target"
+mkdir -p "../${projectName}/${projectName}/${projectName}"
 # mkdir -p "../${projectName}/${projectName}/${projectName}_Extension"
 
 echo "copy to $licenseFilePath"
