@@ -12,9 +12,9 @@ fileprivate let ModuleName = "__ProjectName__"
 public extension CTMediator {
     func __ProjectName___demo(name:String, callback:@escaping (String)->Void) -> UIViewController? {
         let params:[AnyHashable:Any] = [
-            "name":name,
-            "callback":callback,
-            kCTMediatorParamsKeySwiftTargetModuleName:ModuleName
+            "name": name,
+            "callback": callback,
+            kCTMediatorParamsKeySwiftTargetModuleName: ModuleName
         ]
         if let viewController = performTarget(ModuleName, action: "demo", params: params, shouldCacheTarget: false) as? UIViewController {
             return viewController
