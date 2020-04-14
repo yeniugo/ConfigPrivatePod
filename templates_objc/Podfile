@@ -5,6 +5,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'git@pkg.poizon.com:duapp/iOS/DUSpecs.git'
 
 use_frameworks!
+use_modular_headers!
 
 target '__ProjectName__' do
 
