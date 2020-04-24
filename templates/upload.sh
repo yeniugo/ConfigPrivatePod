@@ -10,8 +10,8 @@ if [ "$ConflicCount" -gt 0 ] ; then
    return 1
 fi
 
-Repo="DUSpecs"
-RepoList=("DUSpecs" "DUSpecs_test" "DUSpecs_gray")
+Repo="MyRepo"
+RepoList=("MyRepo" "HKNetAddtion" "HKUIAddtion")
 getRepo() {
     echo -e "\n"
     length=${#RepoList[@]}

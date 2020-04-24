@@ -2,7 +2,7 @@
 # platform :ios, '9.0'
 
 source 'https://github.com/CocoaPods/Specs.git'
-source 'git@pkg.poizon.com:duapp/iOS/DUSpecs.git'
+source 'https://github.com/yeniugo/PrivatePods.git'
 
 use_frameworks!
 use_modular_headers!
@@ -12,6 +12,6 @@ target '__ProjectName__' do
   pod "CTMediator"
 
   # private pods
-  pod "SwiftHandyFrame"
+  #pod "SwiftHandyFrame"
  
 end
